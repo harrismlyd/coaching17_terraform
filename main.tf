@@ -47,7 +47,7 @@ module "ecs" {
       }
       assign_public_ip                   = true
       deployment_minimum_healthy_percent = 100
-      subnet_ids                         = [local.public_subnet_id]            #List of subnet IDs to use for your tasks
+      subnet_ids                         = [local.public_subnet_id]    #List of subnet IDs to use for your tasks
       security_group_ids                 = [aws_security_group.ecs.id] #Create a SG resource and pass it here
     }
   }
