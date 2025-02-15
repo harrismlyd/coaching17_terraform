@@ -1,3 +1,4 @@
+### Declare locals
 locals {
   prefix            = "harris"
   vpc_id            = module.vpc.vpc_id
